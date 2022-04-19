@@ -50,6 +50,12 @@ int divide = num2 % num1;
 Console.WriteLine(divide);
 
 // 4 Parādīt vai lietotājs ievadījis pāra vai nepāra skaitli
+Console.WriteLine("Lūdzu, ievadi skaitli");
+int number = int.Parse(Console.ReadLine());
+bool isEven = number % 2 == 0;
+Console.WriteLine("Skaitlis ir pāra skaitlis: " + isEven);
+
+
 
 
 Console.WriteLine();
@@ -76,7 +82,7 @@ double userNumber2 = double.Parse(userNumberText2);
 // 5. Sareizināt malas iegūstot laukuma vērtību
 
 Console.WriteLine("S = a*b");
-double Prase1 = (userNumber1 + userNumber2);
+double Prase1 = userNumber1 * userNumber2;
 Console.WriteLine("S = " + Prase1);
 
 // Precīzi jāaprēķina laukums arī ja tas sanāk decimāldaļās jānoapaļo ar 2 cipariem aiz komata
